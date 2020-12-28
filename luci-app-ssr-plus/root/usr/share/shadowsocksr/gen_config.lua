@@ -142,7 +142,7 @@ local ss = {
 	local_port = tonumber(local_port),
 	password = server.password,
 	method = server.encrypt_method,
-	timeout = tonumber(server.timeout) or 60,
+	timeout = tonumber(server.timeout),
 	fast_open = (server.fast_open == "1") and true or false,
 	reuse_port = true
 }

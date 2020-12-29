@@ -149,7 +149,7 @@ local ss = {
 if server.type == "ss" then
 	if server.plugin then
 		ss.plugin = server.plugin
-		ss.plugin_opts = (server.simple_obfs) and server.simple_obfs .. server.plugin_opts or (server.v2ray_plugin ~= "none") and server.v2ray_plugin .. server.plugin_opts or nil
+		ss.plugin_opts = server.plugin_opts or nil
 	end
 	print(json.stringify(ss, 1))
 end

@@ -147,7 +147,7 @@ local ss = {
 	reuse_port = true
 }
 if server.type == "ss" then
-	if server.plugin then
+	if server.plugin or server.plugin ~="none" then
 		ss.plugin = server.plugin
 		ss.plugin_opts = server.plugin_opts or nil
 	end

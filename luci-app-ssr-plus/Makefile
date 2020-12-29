@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-ssr-plus
-PKG_VERSION:=182
+PKG_VERSION:=Preview
 PKG_RELEASE:=1
 
 define Package/$(PKG_NAME)/conffiles

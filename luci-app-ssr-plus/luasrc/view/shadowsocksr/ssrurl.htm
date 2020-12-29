@@ -129,7 +129,7 @@ function import_ssr_url(btn, urlname, sid) {
 				document.getElementsByName('cbid.shadowsocksr.' + sid + '.server_port')[0].value = port;
 				document.getElementsByName('cbid.shadowsocksr.' + sid + '.password')[0].value = password || "";
 				document.getElementsByName('cbid.shadowsocksr.' + sid + '.encrypt_method_ss')[0].value = method || "";
-				document.getElementsByName('cbid.shadowsocksr.' + sid + '.plugin')[0].value = plugin || "";
+				document.getElementsByName('cbid.shadowsocksr.' + sid + '.plugin')[0].value = plugin || "none";
 				document.getElementsByName('cbid.shadowsocksr.' + sid + '.plugin')[0].dispatchEvent(event);
 				document.getElementsByName('cbid.shadowsocksr.' + sid + '.plugin_opts')[0].value = pluginOpts || "";
 				if (param != undefined) {
@@ -148,9 +148,6 @@ function import_ssr_url(btn, urlname, sid) {
 				document.getElementsByName('cbid.shadowsocksr.' + sid + '.server_port')[0].value = part2[1];
 				document.getElementsByName('cbid.shadowsocksr.' + sid + '.password')[0].value = part1[1];
 				document.getElementsByName('cbid.shadowsocksr.' + sid + '.encrypt_method_ss')[0].value = part1[0];
-				document.getElementsByName('cbid.shadowsocksr.' + sid + '.plugin')[0].value = "";
-				document.getElementsByName('cbid.shadowsocksr.' + sid + '.plugin')[0].dispatchEvent(event);
-				document.getElementsByName('cbid.shadowsocksr.' + sid + '.plugin_opts')[0].value = "";
 				if (param != undefined) {
 					document.getElementsByName('cbid.shadowsocksr.' + sid + '.alias')[0].value = decodeURI(param);
 				}

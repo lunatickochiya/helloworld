@@ -21,3 +21,4 @@ Fix the issue of starting twice after apply in the server node list
 Fix the problem that dnsmasq fails to start when the access control list contains wrong entries  
 Replace expired gfwlist update URLs  
 Fix shadowsocks startup bug  
+Fix process daemon bug  

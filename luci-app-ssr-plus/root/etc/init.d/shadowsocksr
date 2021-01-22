@@ -532,7 +532,7 @@ Start_Run() {
 	trojan | trojan-go)
 		gen_config_file $GLOBAL_SERVER $type 1 $tcp_port
 		ln_start_bin $(first_type trojan-go trojan) $type --config $tcp_config_file
-		echolog "Main node:$($(first_type $type) --version 2>&1 | head -1) Started!"
+		echolog "Main node:$($(first_type trojan-go trojan) --version 2>&1 | head -1) Started!"
 		;;
 	naiveproxy)
 		gen_config_file $GLOBAL_SERVER $type 1 $tcp_port
